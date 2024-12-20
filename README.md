@@ -19,12 +19,15 @@ Tài liệu về mongoDb ( NOSQL )
        ```bash
       sudo systemctl start mongod
       sudo systemctl enable mongod
-       ```
-      # Kiểm tra trạng thái MongoDB
-        ```bash
-           sudo systemctl status mongod
-        ```
+
+     #Kiểm tra trạng thái MongoDB
+      sudo systemctl status mongod
+      ```
    - Bước 6: Kiểm tra MongoDB đã cài đặt thành công chưa
        ```bash
        mongosh
+
+   - Bước 7: Sử dụng Composer để cài MongoDB driver:
+        ```bash
+        composer require mongodb/mongodb
 3. 
