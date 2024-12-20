@@ -132,7 +132,7 @@
 	Nếu bạn đang sử dụng PHP-FPM (ví dụ, PHP 7.4-FPM):
 	```bash
 	sudo systemctl restart php7.4-fpm
--	dadas
--	
-
+ 
+## 6. Cách chạy để tạo một collection mới: 
+- 
 
