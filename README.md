@@ -30,4 +30,31 @@ Tài liệu về mongoDb ( NOSQL )
    - Bước 7: Sử dụng Composer để cài MongoDB driver:
         ```bash
         composer require mongodb/mongodb
-3. 
+
+2. Tạo User và Bật Authentication
+   Trước tiên, mở terminal và kết nối vào MongoDB:
+   ```bash
+   mongosh
+   ```
+   2.2 Chuyển vào database admin
+      MongoDB có một database đặc biệt để quản lý người dùng, đó là database admin. Sử dụng lệnh sau để chuyển sang database admin:
+      ```bash
+      use admin
+      ```
+   2.3 Tạo User
+      Tạo một user mới trong MongoDB với quyền đọc và ghi trong một database cụ thể:
+      ```bash
+         db.createUser({ user: "root", pwd: "123123", roles: [ { role: "readWrite", db: "myDatabase" }] })
+         user: Tên người dùng
+         pwd: Mật khẩu của người dùng
+         roles: Các quyền của người dùng, ví dụ:
+         readWrite: Quyền đọc và ghi trong database
+         read: Quyền chỉ đọc trong database
+         dbAdmin: Quyền quản trị cơ sở dữ liệu
+      ```
+   2.4 Bật Authentication trong MongoDB
+   Để bật tính năng xác thực, bạn cần chỉnh sửa file cấu hình MongoDB:
+      
+4. đá
+5. sfđ
+6.   
