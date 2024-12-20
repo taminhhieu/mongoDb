@@ -106,6 +106,9 @@
      db.dropDatabase()
      ```
 ## 5. Cài cho php
+- đầu tiên nên cho php8.1 sang mặc định
+  ```bash
+  sudo update-alternatives --set php /usr/bin/php8.1
 - Cài ext ext-mongodb
   + Cài đặt MongoDB PHP extension: Trước tiên, bạn cần cài đặt MongoDB extension cho PHP. Để làm điều này, bạn có thể sử dụng các lệnh sau trong terminal.
 	Đối với PHP 7.x hoặc 8.x, sử dụng lệnh sau:
