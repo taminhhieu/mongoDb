@@ -19,4 +19,12 @@ Tài liệu về mongoDb ( NOSQL )
        ```bash
       sudo systemctl start mongod
       sudo systemctl enable mongod
+       ```
+      # Kiểm tra trạng thái MongoDB
+        ```bash
+           sudo systemctl status mongod
+        ```
+   - Bước 6: Kiểm tra MongoDB đã cài đặt thành công chưa
+       ```bash
+       mongosh
 3. 
