@@ -27,11 +27,16 @@
        ```bash
        mongosh
 
-   - Bước 7: Sử dụng Composer để cài MongoDB driver
+   - Bước 7: Sử dụng Composer để cài MongoDB driver ( Nếu đẩy lên git file composer thì không cần chạy )
         ```bash
         composer require mongodb/mongodb
         ```
-
+   - Bước 8:Cài Đặt Driver MongoDB cho PHP:
+     	```bash
+      	sudo apt update
+	sudo apt install php-dev php-pear
+	or sudo apt install php8.1-dev php-pear
+   - Bước 9
 ## 2. Tạo User và Bật Authentication.
 - Chuyển vào database admin
 	+ Trước tiên, mở terminal và kết nối vào MongoDB:
@@ -124,12 +129,12 @@
 	Đối với PHP 7.x hoặc 8.x, sử dụng lệnh sau:
 	```bash
   	sudo apt-get update
-	sudo apt-get install php-pear php-dev
+	sudo apt-get install php-pear php-dev or sudo apt-get install php8.1-pear php-dev
 	sudo apt-get install libmongoc-dev
 	sudo pecl install mongodb
-+ Kích hoạt extension: Sau khi cài đặt thành công, bạn cần thêm extension MongoDB vào file cấu hình PHP. Mở file php.ini của bạn bằng cách sử dụng lệnh:
++ Kích hoạt extension: Sau khi cài đặt thành công, bạn cần thêm extension MongoDB vào file cấu hình PHP. Mở file php.ini của bạn bằng cách sử dụng lệnh: ( cả 2 php.ini )
   ```bash
-  sudo nano /etc/php/7.x/cli/php.ini
+  sudo nano /etc/php/7.x/cli/php.ini and sudo nano /etc/php/8.1/fpm/php.ini
   ```
   Thay 7.x bằng phiên bản PHP của bạn. Thêm dòng sau vào cuối file:
   ```bash
