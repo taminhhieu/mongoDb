@@ -94,6 +94,11 @@
    - Chọn hoặc tạo cơ sở dữ liệu mới
      ```bash
      use myNewDatabase
+     ```
+   - Kết nối với MongoDB bằng tài khoản admin:
+		```bash
+			mongosh -u "root" -p "123123" --authenticationDatabase "db-name" --port 27000
+		```
    - Thêm dữ liệu vào cơ sở dữ liệu
      Khi bạn đã chọn cơ sở dữ liệu, bạn có thể thêm dữ liệu vào cơ sở dữ liệu đó bằng cách tạo một collection và chèn một document.
 		Ví dụ:
