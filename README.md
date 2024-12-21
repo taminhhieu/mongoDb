@@ -59,6 +59,11 @@
    + Để bật tính năng xác thực, bạn cần chỉnh sửa file cấu hình MongoDB:
    	```bash
       sudo nano /etc/mongod.conf
+    	```
++ Thêm quyền:
+  ```bash
+  	security:
+ 	authorization: enabled
 ## 3. Đổi port
  - Mở file cấu hình MongoDB
    ```bash
