@@ -51,7 +51,7 @@
 - Tạo User
   + Tạo một user mới trong MongoDB với quyền đọc và ghi trong một database cụ thể:
       ```bash
-      	use eric-v2> db.createUser({ user: "root", pwd: "123123", /* Mật khẩu cho tài khoản admin*/ roles: [{ role: "readWrite", db: "eric-v2" }] /* Quyền "root" cho toàn bộ hệ thống*/ })
+      	use db-v2> db.createUser({ user: "root", pwd: "123123", /* Mật khẩu cho tài khoản admin*/ roles: [{ role: "readWrite", db: "db-v2" }] /* Quyền "root" cho toàn bộ hệ thống*/ })
          db.createUser({ user: "root", pwd: "123123", roles: [ { role: "readWrite", db: "myDatabase" }] })
          user: Tên người dùng
          pwd: Mật khẩu của người dùng
